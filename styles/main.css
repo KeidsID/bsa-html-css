@@ -1,0 +1,31 @@
+/* mobile first */
+
+:root {
+  --bg-color: #1a173d;
+  --main-purple: #5133a6;
+  --main-orange: #e25300;
+  --purple-gradient: linear-gradient(#8564bb 0%, #662cc5 85%);
+  --orange-gradient: radial-gradient(#f5c292 25%, #f19641 85%);
+}
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+
+  background: var(--bg-color);
+  color: white;
+}
+
+.button {
+  font-size: 20px;
+}
+
+.button-small {
+  font-size: 16px;
+}
+
+.social__link {
+  font-size: 35px;
+  text-decoration: none;
+}
