@@ -1,0 +1,124 @@
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  position: sticky;
+  top: 0;
+
+  padding: 15px 20px;
+
+  background: var(--bg-color);
+  font-family: var(--righteous);
+}
+
+header div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+header img {
+  width: 40px;
+  height: 40px;
+
+  padding: 0 8px 0 0;
+}
+
+header h3 {
+  font-size: var(--title-fs);
+}
+
+.menu__button {
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.menu {
+  display: flex;
+  flex: 1;
+  max-width: 400px;
+  justify-content: space-between;
+}
+
+.menu__link {
+  font-size: var(--button-small-fs);
+  color: white;
+
+  text-decoration: none;
+}
+
+.menu__link:hover {
+  border-bottom: 2px solid var(--main-orange);
+}
+
+@media (max-width: 600px) {
+  .menu__button {
+    display: flex;
+  }
+  .menu {
+    position: absolute;
+    top: 0;
+    margin-top: 90px;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    max-width: none;
+    justify-content: center;
+    align-items: center;
+  }
+  #menu-toggle ~ .menu .menu__link {
+    height: 0;
+    margin: 0;
+    padding: 8px;
+
+    border: 0;
+
+    transition: height 400ms ease-in-out;
+  }
+
+  #menu-toggle ~ .menu .menu__link:hover {
+    text-decoration: underline;
+    text-decoration-color: var(--main-orange);
+  }
+
+  #menu-toggle:checked ~ .menu .menu__link {
+    height: 2em;
+
+    text-align: center;
+
+    transition: height 400ms ease-in-out;
+  }
+  .menu > .menu__link {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0.5em 0;
+    width: 100%;
+  }
+
+  #menu-toggle ~ .menu {
+    opacity: 0;
+    background: linear-gradient(
+      180deg,
+      var(--bg-color) 50%,
+      rgba(0, 0, 0, 0) 100%
+    );
+
+    transition: opacity 400ms ease-in-out 200ms;
+  }
+
+  #menu-toggle:checked ~ .menu {
+    opacity: 100%;
+
+    transition: opacity 400ms ease-in-out;
+  }
+}

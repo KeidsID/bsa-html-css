@@ -1,11 +1,22 @@
-/* mobile first */
-
 :root {
   --bg-color: #1a173d;
   --main-purple: #5133a6;
   --main-orange: #e25300;
   --purple-gradient: linear-gradient(#8564bb 0%, #662cc5 85%);
   --orange-gradient: radial-gradient(#f5c292 25%, #f19641 85%);
+
+  --ubuntu: "Ubuntu", sans-serif;
+  --righteous: "Righteous", sans-serif;
+
+  --inner-text-fs: 18px;
+  --inner-small-fs: 16px;
+  --header-1-fs: 70px;
+  --header-2-fs: 48px;
+  --header-3-fs: 36px;
+  --subheader-fs: 34px;
+  --title-fs: 24px;
+  --button-fs: 20px;
+  --button-small-fs: 16px;
 }
 
 html,
@@ -15,17 +26,14 @@ body {
 
   background: var(--bg-color);
   color: white;
+
+  font-family: var(--ubuntu);
+  font-weight: 400;
+  font-size: var(--inner-small-fs);
 }
 
-.button {
-  font-size: 20px;
-}
+.footer__link {
+  font-size: var(--inner-text-fs);
 
-.button-small {
-  font-size: 16px;
-}
-
-.social__link {
-  font-size: 35px;
   text-decoration: none;
 }

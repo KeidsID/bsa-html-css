@@ -11,21 +11,25 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles/main.css" />
-    <link rel="stylesheet" href="styles/fonts.css" />
+    <link rel="stylesheet" href="styles/header.css" />
     <link rel="stylesheet" href="styles/icons.css" />
   </head>
   <body>
     <header>
-      <span>
+      <div>
         <img src="assets/images/logo.png" alt="logo" />
-        <span class="title">Catademy</span>
-      </span>
-      <nav id="header-links">
-        <a href="">About</a>
-        <a href="">Contacts</a>
-        <a href="">Lessons</a>
-        <a href="#gallery">Gallery</a>
-        <a href="#subscribe">Subscribe</a>
+        <h3>Catademy</h3>
+      </div>
+      <input id="menu-toggle" type="checkbox" />
+      <label class="menu__button" for="menu-toggle">
+        <img src="assets/icons/menu-button.svg" alt="Menu Button" />
+      </label>
+      <nav class="menu">
+        <a href="" class="menu__link">About</a>
+        <a href="#social-links" class="menu__link">Contacts</a>
+        <a href="" class="menu__link">Lessons</a>
+        <a href="#gallery" class="menu__link">Gallery</a>
+        <a href="#subscribe" class="menu__link">Subscribe</a>
       </nav>
     </header>
     <main>
