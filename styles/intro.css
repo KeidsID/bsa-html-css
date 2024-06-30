@@ -1,0 +1,56 @@
+section#intro {
+  font-family: var(--righteous);
+}
+
+section#intro a {
+  color: white;
+  text-decoration: none;
+}
+
+.intro__content {
+  display: flex;
+  flex-direction: column;
+
+  background: var(--purple-gradient);
+  border-radius: 25px;
+  padding: 24px;
+
+  gap: 10px;
+}
+
+.intro__image {
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 150px;
+}
+
+.intro__title {
+  font-size: var(--header-3-fs);
+}
+
+.intro__subtitle {
+  display: flex;
+}
+
+.intro__subtitle-image {
+  display: none;
+}
+
+.intro__subtitle-text {
+  font-family: var(--ubuntu);
+  font-size: var(--inner-small-fs);
+}
+
+.intro__actions {
+  display: flex;
+  flex-direction: column;
+}
+
+.intro__button {
+  padding: 8px;
+  margin: 8px;
+
+  text-align: center;
+}

@@ -11,6 +11,8 @@ header {
 
   background: var(--bg-color);
   font-family: var(--righteous);
+
+  z-index: 100;
 }
 
 header div {
@@ -107,11 +109,7 @@ header h3 {
 
   #menu-toggle ~ .menu {
     opacity: 0;
-    background: linear-gradient(
-      180deg,
-      var(--bg-color) 50%,
-      rgba(0, 0, 0, 0) 100%
-    );
+    background: var(--bg-color);
 
     transition: opacity 400ms ease-in-out 200ms;
   }
