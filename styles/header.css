@@ -60,14 +60,14 @@ header h3 {
   border-bottom: 2px solid var(--main-orange);
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   .menu__button {
     display: flex;
   }
   .menu {
     position: absolute;
     top: 0;
-    margin-top: 90px;
+    margin-top: 60px;
     left: 0;
     flex-direction: column;
     width: 100%;
